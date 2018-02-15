@@ -129,7 +129,6 @@ func ImportUsers(w http.ResponseWriter, r *http.Request) {
   for _,line := range strings.Split(contents,"\n") {
     if (strings.Count(line, ",") == 3) {
       newData := strings.Split(strings.TrimSpace(line),",")
-      fmt.Println(newData)
       var newUser User
       newUser.ID = strconv.Itoa(nextID)
       newUser.First = newData[0]
