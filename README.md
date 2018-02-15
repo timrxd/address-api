@@ -28,7 +28,7 @@ The api will be located at localhost:8000/users.
 ##### DELETE /users/{id}
 * Deletes a user based on {id}
 
-##### POST /users/csv
+##### POST /users.csv
 * Imports a set of users from a CSV file
 * CSV file should be under the "csv" key in form-data body of the POST
 * No spaces in between fields
@@ -44,5 +44,5 @@ The api will be located at localhost:8000/users.
 `Rafa,Nadal,rafa@gmail.com,213-456-0987`  
 `Novak,Djoker,nole@gmail.com,777-777-7777`  
 
-##### GET /users/csv
+##### GET /users.csv
 * Export all users into a CSV file format
