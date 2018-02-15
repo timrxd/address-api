@@ -33,16 +33,16 @@ The api will be located at localhost:8000/users.
 * CSV file should be under the "csv" key in form-data body of the POST
 * No spaces in between fields
 * Example POST:
-`POST /users/csv HTTP/1.1
-Host: localhost:8000
-Cache-Control: no-cache
-Content-Type: multipart/form-data;
-Content-Disposition: form-data; name="csv"; filename="names.csv"
-Content-Type: application/vnd.ms-excel`
-* File Example:
-`Roger,Federer,fed@gmail.com,908-111-2222
-Rafa,Nadal,rafa@gmail.com,213-456-0987
-Novak,Djoker,nole@gmail.com,777-777-7777`
+`POST /users/csv HTTP/1.1`  
+`Host: localhost:8000`  
+`Cache-Control: no-cache`    
+`Content-Type: multipart/form-data;`    
+`Content-Disposition: form-data; name="csv"; filename="names.csv"`    
+`Content-Type: application/vnd.ms-excel`  
+* File Example:  
+`Roger,Federer,fed@gmail.com,908-111-2222`  
+`Rafa,Nadal,rafa@gmail.com,213-456-0987`  
+`Novak,Djoker,nole@gmail.com,777-777-7777`  
 
 ##### GET /users/csv
 * Export all users into a CSV file format
