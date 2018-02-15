@@ -5,7 +5,9 @@ Online address book exposed as a REST API
 * Clone this repository to $GOPATH/src/timrxd/address-API
 * cd address-api
 * run `go build` and `.\address-api`.  
-The api will be located at localhost:8000/users.
+
+The api will be located at localhost:8000/users.  
+It inititalizes as an empty address book.  
 
 #### Current endpoints:
 
